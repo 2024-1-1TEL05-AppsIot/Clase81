@@ -70,7 +70,7 @@ public class NotificationActivity extends AppCompatActivity {
         //Crear notificación
         //Agregar información a la notificación que luego sea enviada a la actividad que se abre
         Intent intent = new Intent(this, MainActivity.class);
-        intent.putExtra("pid",4616);
+        intent.putExtra("pid","4616");
         PendingIntent pendingIntent = PendingIntent.getActivity(this, 0, intent, PendingIntent.FLAG_IMMUTABLE);
         //
         NotificationCompat.Builder builder = new NotificationCompat.Builder(this, canal1)
